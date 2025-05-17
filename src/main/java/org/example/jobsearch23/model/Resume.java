@@ -37,7 +37,7 @@ public class Resume {
         this.id = id;
     }
 
-    public JobseekerProfile getProfile() {
+    public JobSeekerProfile getProfile() {
         return profile;
     }
 
