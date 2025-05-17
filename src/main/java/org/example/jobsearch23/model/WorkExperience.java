@@ -15,7 +15,7 @@ public class WorkExperience {
 
     @ManyToOne
     @JoinColumn(name = "profile_id", nullable = false)
-    private JobseekerProfile profile;
+    private JobSeekerProfile profile;
 
     @Column(name = "company_name", nullable = false)
     private String companyName;

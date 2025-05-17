@@ -19,7 +19,7 @@ public class JobApplication {
 
     @ManyToOne
     @JoinColumn(name = "jobseeker_id", nullable = false)
-    private JobseekerProfile jobseeker;
+    private JobSeekerProfile jobseeker;
 
     @Column(name = "cover_letter", columnDefinition = "TEXT")
     private String coverLetter;
@@ -52,11 +52,11 @@ public class JobApplication {
         this.job = job;
     }
 
-    public JobseekerProfile getJobseeker() {
+    public JobSeekerProfile getJobseeker() {
         return jobseeker;
     }
 
-    public void setJobseeker(JobseekerProfile jobseeker) {
+    public void setJobseeker(JobSeekerProfile jobseeker) {
         this.jobseeker = jobseeker;
     }
 

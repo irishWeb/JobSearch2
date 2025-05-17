@@ -14,7 +14,7 @@ public class Resume {
 
     @ManyToOne
     @JoinColumn(name = "profile_id", nullable = false)
-    private JobseekerProfile profile;
+    private JobSeekerProfile profile;
 
     @Column(nullable = false)
     private String title;

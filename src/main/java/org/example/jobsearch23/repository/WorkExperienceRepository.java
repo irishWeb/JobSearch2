@@ -1,4 +1,16 @@
 package org.example.jobsearch23.repository;
 
-public class WorkExperienceRepository {
+import org.example.jobsearch23.model.JobSeekerProfile;
+import org.example.jobsearch23.model.WorkExperience;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface WorkExperienceRepository extends JpaRepository<WorkExperience, Long> {
+
+    List<WorkExperience> findByProfile(JobSeekerProfile profile);
+
+    List<WorkExperience> findByProfileOrderByStartDateDesc(JobSeekerProfile profile);
 }
