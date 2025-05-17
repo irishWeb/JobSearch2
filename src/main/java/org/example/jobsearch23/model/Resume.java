@@ -41,7 +41,7 @@ public class Resume {
         return profile;
     }
 
-    public void setProfile(JobseekerProfile profile) {
+    public void setProfile(JobSeekerProfile profile) {
         this.profile = profile;
     }
 

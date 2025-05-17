@@ -9,7 +9,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "jobseeker_profiles")
-public class JobseekerProfile {
+public class JobSeekerProfile {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
